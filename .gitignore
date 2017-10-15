@@ -2,3 +2,5 @@ node_modules/
 test/
 yarn.lock
 .history/
+.npmrc
+package-lock.json
