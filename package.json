@@ -1,0 +1,25 @@
+{
+  "name": "hug.css",
+  "version": "0.0.1",
+  "description": "A tiny css library which does absolutely nothing.",
+  "main": "dist/style.min.css",
+  "scripts": {
+    "build": "gulp build:sass",
+    "git-build": "npm run build && git add dist -f && git commit -m \"build(release): auto build [ci skip]\"",
+    "clean:all": "npm run clean:tmp && rimraf node_modules",
+    "release": "corp-semantic-release",
+    "release-log": "conventional-github-releaser -p angular -r 0",
+    "prebuild": "rimraf dist tmp",
+    "prebuild:watch": "rimraf dist tmp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lokesh-coder/hug.css.git"
+  },
+  "author": "Lokesh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lokesh-coder/hug.css/issues"
+  },
+  "homepage": "https://github.com/lokesh-coder/hug.css#readme"
+}
