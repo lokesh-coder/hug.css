@@ -1,6 +1,6 @@
 {
   "name": "hug.css",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A tiny css library which does absolutely nothing.",
   "main": "dist/style.min.css",
   "scripts": {
