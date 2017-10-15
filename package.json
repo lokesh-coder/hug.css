@@ -7,7 +7,7 @@
     "build": "gulp build:sass",
     "git-build": "npm run build && git add dist -f && git commit -m \"build(release): auto build [ci skip]\"",
     "clean:all": "npm run clean:tmp && rimraf node_modules",
-    "release": "corp-semantic-release",
+    "release": "corp-semantic-release --branch master",
     "release-log": "conventional-github-releaser -p angular -r 0",
     "prebuild": "rimraf dist tmp",
     "prebuild:watch": "rimraf dist tmp"
