@@ -1,4 +1,5 @@
 $color:red;
+$green:green;
 body{
 	color:$color;
 	border:none;
@@ -6,3 +7,6 @@ body{
 	font-size:15px;
 }
 
+div{
+	color:$green;
+}
