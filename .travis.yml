@@ -1,11 +1,5 @@
 sudo: required
 dist: trusty
-addons:
-  apt:
-    sources:
-      - google-chrome
-    packages:
-      - google-chrome-stable
 language: node_js
 node_js:
   - node
@@ -35,5 +29,5 @@ after_success:
 
 branches:
   only:
-    - master
+    - staging
     - /^greenkeeper/.*$/
