@@ -12,6 +12,17 @@
     "prebuild": "rimraf dist tmp",
     "prebuild:watch": "rimraf dist tmp"
   },
+  "devDependencies": {
+    "browser-sync": "^2.8.2",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.1",
+    "sass-lint": "^1.12.0",
+    "rimraf": "2.6.1",
+    "conventional-github-releaser": "^1.1.12",
+    "corp-semantic-release": "^6.1.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lokesh-coder/hug.css.git"
