@@ -1,11 +1,5 @@
 sudo: required
 dist: trusty
-addons:
-  apt:
-    sources:
-      - google-chrome
-    packages:
-      - google-chrome-stable
 language: node_js
 node_js:
   - node
@@ -22,7 +16,7 @@ before_script:
   - git remote rm origin
   - git remote add origin https://${GH_TOKEN}@github.com/lokesh-coder/hug.css.git
   - 'if [ ${TRAVIS_PULL_REQUEST} = "false" ]; then
-    git checkout master;
+    git fetch && git checkout master;
     git config push.default current;
   fi'
 after_success:
@@ -35,5 +29,5 @@ after_success:
 
 branches:
   only:
-    - master
+    - staging
     - /^greenkeeper/.*$/

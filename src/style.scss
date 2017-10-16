@@ -1,5 +1,8 @@
-$color:#fff;
+$color:red;
 body{
 	color:$color;
-	border:0;
+	border:none;
+	box-sizing:border-box;
+	font-size:15px;
 }
+
